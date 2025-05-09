@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Bloom</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      nav {
+        background-color: #333;
+        color: white;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      nav h1 {
+        display: inline-block;
+        margin: 0;
+      }
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+      }
+      nav ul li {
+        display: inline;
+        margin-right: 20px;
+      }
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+      }
+      nav div {
+        display: flex;
+        align-items: center;
+        padding: 12px;
+      }
+      #searchBar {
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <h1>Travel Bloom</h1>
+      <ul>
+        <li><a href="travel_recommendation.html">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+      <div>
+        <input
+          id="searchBar"
+          type="text"
+          placeholder="Enter a destination or keyword"
+        />
+        <img src="./imgs/search.png" alt="search" width="20" height="20" />
+        <button id="search" type="button">Search</button>
+        <button id="clear" type="button">clear</button>
+      </div>
+    </nav>
+  </body>
+  <script src="./js/travel_recommendation.js"></script>
+</html>
