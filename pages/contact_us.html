@@ -14,16 +14,6 @@
         <li><a href="about_us.html">About Us</a></li>
         <li><a href="contact_us.html">Contact Us</a></li>
       </ul>
-      <div>
-        <input
-          id="searchBar"
-          type="text"
-          placeholder="Enter a destination or keyword"
-        />
-        <img src="../imgs/search.png" alt="search" width="20" height="20" />
-        <button id="search" type="button">Search</button>
-        <button id="clear" type="button">clear</button>
-      </div>
     </nav>
     <main>
       <section id="socialMedia" class="socialMedia">
@@ -51,15 +41,43 @@
           </li>
         </ul>
       </section>
-      <section id="details" class="details">
-        <h2>EXPLORE DREAM DESTINATION</h2>
-        <p id="detailsContent">
-          Discover the beauty of travel with our personalized recommendations.
-          Whether you're looking for adventure, relaxation, or cultural
-          experiences, we have the perfect destination for you. Let us help you
-          create unforgettable memories.
-        </p>
-        <button id="bookNowButton" type="button">Book Now</button>
+      <section id="contactUs" class="contactUs">
+        <div>
+          <h2>Contact Us</h2>
+        </div>
+        <div>
+          <form
+            id="contactForm"
+            action="https://example.com/submit"
+            method="POST"
+          >
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Name"
+              required
+            />
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              required
+            />
+            <label for="message">Message:</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="7"
+              required
+              placeholder="Write your message here..."
+            ></textarea>
+            <button type="submit">Send</button>
+          </form>
+        </div>
       </section>
     </main>
   </body>

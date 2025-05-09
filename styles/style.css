@@ -5,7 +5,7 @@ body {
 }
 
 nav {
-  background-color: #333;
+  background-color: #00494b;
   color: white;
   padding: 10px;
   display: flex;
@@ -28,6 +28,7 @@ nav ul {
 nav ul li {
   display: inline;
   margin-right: 20px;
+  font-weight: bold;
 }
 
 nav ul li a {
@@ -35,12 +36,249 @@ nav ul li a {
   text-decoration: none;
 }
 
-nav div {
+nav > div {
   display: flex;
   align-items: center;
-  padding: 12px;
+  padding: 10px;
+  gap: 10px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+nav > div > button {
+  background-color: #007476;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 20px;
+  cursor: pointer;
 }
 
 #searchBar {
   padding: 5px;
+  border: 1px solid transparent;
+  width: 200px;
+}
+
+#searchBar:focus {
+  border-color: #fff;
+  outline: none;
+}
+
+main {
+  padding: 20px;
+  background-image: url("https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2l0eXxlbnwwfHwwfHx8MA%3D%3D");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  height: 100vh;
+  display: flex;
+}
+
+.socialMedia {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.socialMedia > .verticalLine {
+  width: 2px;
+  height: 300px;
+  background-color: white;
+}
+
+#socialMediaLinks {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+}
+
+#socialMediaLinks > li {
+  margin: 5px 0;
+}
+
+#socialMediaLinks > li > a > img {
+  width: 30px;
+  height: 30px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.details > h2 {
+  font-size: 5em;
+  margin: 0;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  width: 100px;
+  font-weight: bolder;
+}
+
+.details > p {
+  font-size: 1.5em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#bookNowButton {
+  background-color: #007476;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 1.2em;
+  width: 150px;
+}
+
+.aboutUs {
+  padding: 20px;
+  margin: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  width: 100%;
+}
+
+.aboutUs > h2 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.aboutUs > #aboutUsContent {
+  font-size: 1em;
+}
+
+.ourTeam {
+  display: flex;
+  gap: 100px;
+  padding: 20px;
+  margin: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+}
+
+.ourTeam > h3 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  font-weight: bolder;
+  width: 150px;
+}
+
+.ourTeam > .teamMembers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  width: 100%;
+}
+
+.teamMembers > .teamMember {
+  display: flex;
+  gap: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  padding: 20px;
+  width: 200px;
+}
+
+.teamMembers > .teamMember > img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.teamMembers > .teamMember > div > h4 {
+  font-size: 1em;
+  margin: 10px 0;
+}
+
+.teamMembers > .teamMember > div > .memberDescription {
+  font-size: 1em;
+  margin: 10px 0;
+}
+
+.teamMembers > .teamMember > div > .memberRole {
+  font-size: 0.8em;
+  color: #ccc;
+  background-color: #00349c;
+  padding: 5px 10px;
+  border: 0.5px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.contactUs {
+  padding: 20px;
+  margin: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  width: 100%;
+  display: flex;
+}
+
+.contactUs > :nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.contactUs > :nth-child(1) > h2 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.contactUs > :nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.contactUs > :nth-child(2) > #contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+
+#contactForm > input,
+#contactForm > textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333;
+  font-size: 1em;
+}
+
+#contactForm > button {
+  background-color: #007476;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#contactForm > button:hover {
+  background-color: #005f5f;
 }
