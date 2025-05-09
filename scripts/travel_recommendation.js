@@ -1,5 +1,5 @@
 const travelRecommendation = async () => {
-    const countriesData = await fetch('https://api.example.com/countries')
+    const countriesData = await fetch('../api/travel_recommendation_api.json')
         .then(response => response.json())
     const countryList = document.getElementById('country-list');
     const countrySelect = document.getElementById('country-select');
@@ -23,7 +23,7 @@ const travelRecommendation = async () => {
 document.addEventListener('DOMContentLoaded', travelRecommendation);
 
 const getSearchResults = async (query) => {
-    const response = await fetch('https://api.example.com/countries')
+    const response = await fetch('../api/travel_recommendation_api.json')
         .then(response => response.json())
     const data = response.filter(country => country.name.toLowerCase().includes(query.toLowerCase()));
     if (data.length === 0) {
