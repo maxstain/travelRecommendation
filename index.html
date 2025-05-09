@@ -1,67 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Travel Bloom</title>
-    <link rel="stylesheet" href="./styles/style.css" />
-  </head>
-  <body>
-    <nav>
-      <h1>Travel Bloom</h1>
-      <ul>
-        <li><a href="travel_recommendation.html">Home</a></li>
+    <link rel="stylesheet" href="./styles/style.css"/>
+</head>
+<body>
+<nav>
+    <h1>Travel Bloom</h1>
+    <ul>
+        <li><a href="index.html">Home</a></li>
         <li><a href="about_us.html">About Us</a></li>
         <li><a href="contact_us.html">Contact Us</a></li>
-      </ul>
-      <div>
+    </ul>
+    <form action="#">
+        <label for="searchBar">Search Destinations:</label>
         <input
-          id="searchBar"
-          type="text"
-          placeholder="Enter a destination or keyword"
+                id="searchBar"
+                type="text"
+                placeholder="Enter a destination or keyword"
         />
-        <img src="./imgs/search.png" alt="search" width="20" height="20" />
-        <button id="search" type="button">Search</button>
-        <button id="clear" type="button">clear</button>
-      </div>
-    </nav>
-    <main>
-      <section id="socialMedia" class="socialMedia">
+        <img src="./imgs/search.png" alt="search" width="20" height="20"/>
+        <button id="recommendation-button" type="button">Search</button>
+        <button id="clear" type="reset">Clear</button>
+    </form>
+</nav>
+<main>
+    <section id="socialMedia" class="socialMedia">
         <div class="verticalLine"></div>
         <ul id="socialMediaLinks">
-          <li>
-            <a href="https://www.twitter.com" target="_blank">
-              <img src="./imgs/twitter.png" alt="Twitter" />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.facebook.com" target="_blank">
-              <img src="./imgs/facebook.png" alt="Facebook" />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com" target="_blank">
-              <img src="./imgs/instagram.png" alt="Instagram" />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.youtube.com" target="_blank">
-              <img src="./imgs/youtube.png" alt="Youtube" />
-            </a>
-          </li>
+            <li>
+                <a href="https://www.twitter.com" target="_blank">
+                    <img src="./imgs/twitter.png" alt="Twitter"/>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="./imgs/facebook.png" alt="Facebook"/>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="./imgs/instagram.png" alt="Instagram"/>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com" target="_blank">
+                    <img src="./imgs/youtube.png" alt="Youtube"/>
+                </a>
+            </li>
         </ul>
-      </section>
-      <section id="details" class="details">
+    </section>
+    <section id="details" class="details">
         <h2>EXPLORE DREAM DESTINATION</h2>
         <p id="detailsContent">
-          Discover the beauty of travel with our personalized recommendations.
-          Whether you're looking for adventure, relaxation, or cultural
-          experiences, we have the perfect destination for you. Let us help you
-          create unforgettable memories.
+            Discover the beauty of travel with our personalized recommendations.
+            Whether you're looking for adventure, relaxation, or cultural
+            experiences, we have the perfect destination for you. Let us help you
+            create unforgettable memories.
         </p>
         <button id="bookNowButton" type="button">Book Now</button>
-      </section>
-    </main>
-  </body>
-  <script src="./scripts/travel_recommendation.js"></script>
+    </section>
+    <section id="recommendation-result" class="recommendations"></section>
+</main>
+</body>
+<script src="./scripts/travel_recommendation.js"></script>
 </html>
